@@ -5,18 +5,18 @@
     "default_loras": [
         [
             true,
-            "sdxl_lora.safetensors",
+            "lexiFaceLORA.safetensors",
+            0.85
+        ],
+        [
+            true,
+            "lexiBodyLORA.safetensors",
             0.85
         ],
         [
             true,
             "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors",
             0.25
-        ],
-        [
-            true,
-            "None",
-            1.0
         ],
         [
             true,
@@ -49,6 +49,8 @@
     },
     "embeddings_downloads": {},
     "lora_downloads": {
+        "lexiFaceLORA.safetensors": "https://huggingface.co/bpvsLL/lexiLORA/resolve/main/lexiFaceLORA.safetensors",
+        "lexiBodyLORA.safetensors": "https://huggingface.co/bpvsLL/lexiLORA/resolve/main/lexiBodyLORA.safetensors",
         "sdxl_lora.safetensors": "https://huggingface.co/bpvsLL/sdxl-model-lexi/resolve/main/sdxl_lora.safetensors",
         "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors": "https://huggingface.co/mashb1t/fav_models/resolve/main/fav/SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors"
     },
