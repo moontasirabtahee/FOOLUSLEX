@@ -609,11 +609,12 @@ with shared.gradio_root:
                 seed_random.change(random_checked, inputs=[seed_random], outputs=[image_seed],
                                    queue=False, show_progress=False)
 
-                def update_history_link():
+                def update_history_link(fmt=None):
                     if args_manager.args.disable_image_log:
                         return gr.update(value='')
 
-                    return gr.update(value=f'<a href="file={get_current_html_path(output_format)}" target="_blank">\U0001F4DA History Log</a>')
+                    fmt = fmt if isinstance(fmt, str) else modules.config.default_output_format
+                    return gr.update(value=f'<a href="file={get_current_html_path(fmt)}" target="_blank">\U0001F4DA History Log</a>')
 
                 history_link = gr.HTML()
                 shared.gradio_root.load(update_history_link, outputs=history_link, queue=False, show_progress=False)
@@ -948,7 +949,7 @@ with shared.gradio_root:
                                          scheduler_name, adaptive_cfg, refiner_swap_method, negative_prompt, disable_intermediate_results
                                      ], queue=False, show_progress=False)
 
-        output_format.input(lambda x: gr.update(output_format=x), inputs=output_format)
+        output_format.input(update_history_link, inputs=output_format, outputs=history_link, queue=False, show_progress=False)
 
         advanced_checkbox.change(lambda x: gr.update(visible=x), advanced_checkbox, advanced_column,
                                  queue=False, show_progress=False) \
