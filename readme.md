@@ -113,7 +113,7 @@ See also the common problems and troubleshoots [here](troubleshoot.md).
 
 | Colab | Info
 | --- | --- |
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lllyasviel/Fooocus/blob/main/fooocus_colab.ipynb) | Fooocus Official
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/moontasirabtahee/FOOLUSLEX/blob/main/fooocus_colab.ipynb) | FOOLUSLEX Official
 
 In Colab, you can modify the last line to `!python entry_with_update.py --share --always-high-vram` or `!python entry_with_update.py --share --always-high-vram --preset anime` or `!python entry_with_update.py --share --always-high-vram --preset realistic` for Fooocus Default/Anime/Realistic Edition.
 
@@ -129,8 +129,8 @@ Thanks to [camenduru](https://github.com/camenduru) for the template!
 
 If you want to use Anaconda/Miniconda, you can
 
-    git clone https://github.com/lllyasviel/Fooocus.git
-    cd Fooocus
+    git clone https://github.com/moontasirabtahee/FOOLUSLEX.git
+    cd FOOLUSLEX
     conda env create -f environment.yaml
     conda activate fooocus
     pip install -r requirements_versions.txt
@@ -151,8 +151,8 @@ Use `python entry_with_update.py --preset anime` or `python entry_with_update.py
 
 Your Linux needs to have **Python 3.10** installed, and let's say your Python can be called with the command **python3** with your venv system working; you can
 
-    git clone https://github.com/lllyasviel/Fooocus.git
-    cd Fooocus
+    git clone https://github.com/moontasirabtahee/FOOLUSLEX.git
+    cd FOOLUSLEX
     python3 -m venv fooocus_env
     source fooocus_env/bin/activate
     pip install -r requirements_versions.txt
@@ -173,8 +173,8 @@ Use `python entry_with_update.py --preset anime` or `python entry_with_update.py
 
 If you know what you are doing, and your Linux already has **Python 3.10** installed, and your Python can be called with the command **python3** (and Pip with **pip3**), you can
 
-    git clone https://github.com/lllyasviel/Fooocus.git
-    cd Fooocus
+    git clone https://github.com/moontasirabtahee/FOOLUSLEX.git
+    cd FOOLUSLEX
     pip3 install -r requirements_versions.txt
 
 See the above sections for model downloads. You can launch the software with:
