@@ -1,17 +1,17 @@
 {
-    "default_model": "realisticStockPhoto_v20.safetensors",
+    "default_model": "lustifySDXLNSFWSFW_v20.safetensors",
     "default_refiner": "None",
     "default_refiner_switch": 0.5,
     "default_loras": [
         [
             true,
-            "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors",
-            0.25
+            "sdxl_lora.safetensors",
+            0.8
         ],
         [
             true,
-            "None",
-            1.0
+            "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors",
+            0.25
         ],
         [
             true,
@@ -44,11 +44,13 @@
     "default_aspect_ratio": "896*1152",
     "default_overwrite_step": -1,
     "checkpoint_downloads": {
+        "lustifySDXLNSFWSFW_v20.safetensors": "https://huggingface.co/TheImposterImposters/LUSTIFY-v2.0/resolve/main/lustifySDXLNSFWSFW_v20.safetensors",
         "realisticStockPhoto_v20.safetensors": "https://huggingface.co/lllyasviel/fav_models/resolve/main/fav/realisticStockPhoto_v20.safetensors"
     },
     "embeddings_downloads": {},
     "lora_downloads": {
+        "sdxl_lora.safetensors": "https://huggingface.co/bpvsLL/sdxl-model-lexi/resolve/main/sdxl_lora.safetensors",
         "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors": "https://huggingface.co/mashb1t/fav_models/resolve/main/fav/SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors"
     },
-    "previous_default_models": ["realisticStockPhoto_v10.safetensors"]
+    "previous_default_models": ["realisticStockPhoto_v20.safetensors", "realisticStockPhoto_v10.safetensors"]
 }
