@@ -53,9 +53,24 @@ def load_file_from_url(
                 }
             )
             try:
-                with urllib.request.urlopen(req) as response, open(cached_file, "wb") as out_file:
-                    import shutil
-                    shutil.copyfileobj(response, out_file)
+                from tqdm import tqdm
+                with urllib.request.urlopen(req) as response:
+                    total_size = int(response.headers.get('Content-Length', 0))
+                    block_size = 1024 * 1024  # 1 MB chunks
+                    with open(cached_file, "wb") as out_file, tqdm(
+                        total=total_size,
+                        unit='B',
+                        unit_scale=True,
+                        unit_divisor=1024,
+                        desc=file_name,
+                        disable=not progress
+                    ) as pbar:
+                        while True:
+                            buffer = response.read(block_size)
+                            if not buffer:
+                                break
+                            out_file.write(buffer)
+                            pbar.update(len(buffer))
             except Exception as e:
                 if os.path.exists(cached_file):
                     os.remove(cached_file)
