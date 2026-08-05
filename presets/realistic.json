@@ -51,7 +51,6 @@
     "lora_downloads": {
         "lexiFaceLORA.safetensors": "https://huggingface.co/bpvsLL/lexiFaceLORA/resolve/main/lexiFaceLORA.safetensors",
         "lexiBodyLORA.safetensors": "https://huggingface.co/bpvsLL/lexiBodyLORA/resolve/main/lexiBodyLORA.safetensors",
-        "sdxl_lora.safetensors": "https://huggingface.co/bpvsLL/sdxl-model-lexi/resolve/main/sdxl_lora.safetensors",
         "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors": "https://huggingface.co/mashb1t/fav_models/resolve/main/fav/SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors"
     },
     "previous_default_models": ["realisticStockPhoto_v20.safetensors", "realisticStockPhoto_v10.safetensors"]
