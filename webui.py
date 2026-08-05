@@ -1,6 +1,7 @@
+import os
+os.environ["MPLBACKEND"] = "Agg"
 import gradio as gr
 import random
-import os
 import json
 import time
 import shared
