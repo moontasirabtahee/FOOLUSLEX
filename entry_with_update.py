@@ -1,6 +1,7 @@
 import os
 import sys
 
+os.environ["MPLBACKEND"] = "Agg"
 
 root = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(root)
