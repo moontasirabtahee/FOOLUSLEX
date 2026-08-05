@@ -6,17 +6,17 @@
         [
             true,
             "lexiFaceLORA.safetensors",
-            0.85
+            0.60
         ],
         [
             true,
             "lexiBodyLORA.safetensors",
-            0.85
+            0.50
         ],
         [
             true,
             "SDXL_FILM_PHOTOGRAPHY_STYLE_V1.safetensors",
-            0.25
+            0.15
         ],
         [
             true,
